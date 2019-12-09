@@ -185,6 +185,10 @@ on boot
     mkdir /vendor/mnt/persist/time 0770 system system
     mkdir /vendor/mnt/persist/secnvm 0770 system system
 
+    #Fingerprint
+    mkdir /data/vendor_de/0/fpdata
+    chown system system /data/vendor_de/0/fpdata
+
     #create port-bridge log dir
     mkdir /data/vendor/port_bridge 0770 radio radio
     chmod 0770 /data/vendor/port_bridge

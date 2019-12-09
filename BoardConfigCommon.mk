@@ -190,6 +190,9 @@ BOARD_ROOT_EXTRA_SYMLINKS := \
 TARGET_COPY_OUT_PRODUCT := system/product
 TARGET_COPY_OUT_VENDOR := vendor
 
+# Metadata
+BOARD_USES_METADATA_PARTITION := true
+
 # Peripheral manager
 TARGET_PER_MGR_ENABLED := true
 
