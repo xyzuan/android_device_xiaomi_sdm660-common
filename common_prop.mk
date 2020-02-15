@@ -230,6 +230,13 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.at_library=libqti-at.so \
     ro.vendor.extension_library=libqti-perfd-client.so
 
+# QTI
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+    ro.vendor.qti.va_aosp.support=1
+
+PRODUCT_ODM_PROPERTIES += \
+    ro.vendor.qti.va_odm.support=1
+
 # Radio
 PRODUCT_PROPERTY_OVERRIDES += \
     DEVICE_PROVISIONED=1 \
@@ -261,13 +268,12 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.radio.sib16_support=1 \
     persist.vendor.radio.procedure_bytes=SKIP \
     ril.subscription.types=NV,RUIM \
-    vendor.rild.libpath=/system/vendor/lib64/libril-qc-qmi-1.so \
+    vendor.rild.libpath=/vendor/lib64/libril-qc-hal-qmi.so \
     ro.telephony.default_network=22,20 \
     ro.telephony.iwlan_operation_mode=legacy \
     ro.telephony.use_old_mnc_mcc_format=true \
     ro.vendor.use_data_netmgrd=true \
-    telephony.lteOnCdmaDevice=1 \
-    persist.sys.fflag.override.settings_network_and_internet_v2=true
+    telephony.lteOnCdmaDevice=1
 
 # Rendering
 PRODUCT_PROPERTY_OVERRIDES += \
