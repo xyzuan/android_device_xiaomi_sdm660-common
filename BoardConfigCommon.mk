@@ -207,7 +207,7 @@ BOARD_USES_QCOM_HARDWARE := true
 TARGET_USES_QCOM_BSP := false
 
 # Recovery
-TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
+TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/rootdir/etc/fstab.qcom
 
 # Renderscript
 OVERRIDE_RS_DRIVER := libRSDriver_adreno.so
